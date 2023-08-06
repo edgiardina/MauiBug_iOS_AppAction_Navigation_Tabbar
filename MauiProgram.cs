@@ -18,9 +18,9 @@ public static class MauiProgram
             {
                 //TODO: it's unclear whether icons must be in the Resources/Images folder or in the Platforms/{platform} folder
                 essentials
-                    .AddAppAction("page1", "Page 1")
-                    .AddAppAction("page2", "Page 2")
-                    .AddAppAction("page3/subpage", "Page3/subpage")
+                    .AddAppAction("page1", "Page 1") //works and changes selected tab
+                    .AddAppAction("page2", "Page 2") //works and changes selected tab
+                    .AddAppAction("page3/subpage", "Page3/subpage") //does not change active tab (but puts subpage in a nav stack underneath page3 tab)
                     .OnAppAction(App.HandleAppActions);
 
                 essentials.UseVersionTracking();
