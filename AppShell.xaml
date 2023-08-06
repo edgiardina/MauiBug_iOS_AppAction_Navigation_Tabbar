@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiBug_iOS_AppAction_Navigation_Tabbar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiBug_iOS_AppAction_Navigation_Tabbar"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+        Title="Page1"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="page1" />
+        <ShellContent
+        Title="Page2"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="page2" />
+        <ShellContent
+        Title="Page3"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="page3" />
+        <ShellContent
+        Title="Page4"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="page4" />
+        <ShellContent
+        Title="Page5"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="page5" />
+    </TabBar>
+</Shell>
